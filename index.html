@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(154, 57, 154);
+            color:white;
+            align-items: center;
+            text-align: center;
+        }
+
+        input#txtvalidate{
+            font-size: 20pt;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input#buttonvalidate{
+            padding: 30px;
+            font-size: 20pt;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.474);
+        }
+
+    </style>
+</head>
+<body>
+    <div style="margin-top: 200px; margin-bottom: 20px; font-size: 20pt;">Nome da minha noiva!</div>
+
+    <input type="text"  placeholder="Seu nome aqui!" style="width: 600px; text-align: center;" name="txtvalidate" id="txtvalidate">
+</br>
+    <input type="button" value="?" style="margin-top: 10px;" id='buttonvalidate' onclick="clicar()">
+
+    <div id="res" style="margin-top: 10px; font-size: 20pt;"></div>
+
+
+    <script>
+
+        function clicar(){
+
+            var txtvalidate = window.document.querySelector('#txtvalidate')
+
+            if (txtvalidate.value == 'Kemilly Vitoria Marcondes Trindade'){
+             
+                var res = window.document.querySelector('#res')
+
+                res.innerHTML = 'É quase isso, mas falta algo mais!'
+
+                
+
+            }
+            
+            else if (txtvalidate.value == 'Kemilly Vitoria Marcondes Trindade Nossal'){
+            
+                var res = window.document.querySelector('#res')
+
+                res.innerHTML = 'Login: xo.loganns </br> Senha: 112407Lkes@'
+            }
+            
+    
+        
+   
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>
